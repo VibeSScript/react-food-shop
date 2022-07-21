@@ -13,6 +13,36 @@ footer p {
   margin-right: 0.5rem;
 }
 
+footer .call{
+  background: #000;
+  color: #fff;
+  width: 170px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1.3rem;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-top: -0.5rem;
+  text-decoration: none;
+  border-radius: 60px;
+}
+
+footer .mail{
+  background: #000;
+  color: #fff;
+  width: 170px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1.4rem;
+  font-size: 0.9rem;
+  cursor: pointer;
+  margin-top: -0.5rem;
+  text-decoration: none;
+  border-radius: 60px;
+}
+
 @media (max-width: 576px) {
   footer p {
     font-size: 0.8rem;

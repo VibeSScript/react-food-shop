@@ -7,6 +7,8 @@ header {
 .header-img {
   width: 100%;
   align-self: center;
+  border-radius: 80px;
+  margin-left: auto;
 }
 .header-content {
   display: flex;
@@ -18,6 +20,7 @@ header {
   flex-direction: column;
   flex: 1;
   justify-content: center;
+  margin-right: 30px;
 }
 .content-main h1 {
   font-size: 3rem;

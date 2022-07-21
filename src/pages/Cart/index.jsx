@@ -6,6 +6,8 @@ import Footer from '../../components/common/Footer';
 import Logo from '../../components/common/Logo';
 import Menu from '../../components/common/Menu';
 import MenuItem from '../../components/common/Menu/MenuItem';
+
+
 import {
   selectCartItems,
   selectCartItemsCount,
@@ -13,7 +15,8 @@ import {
 } from '../../redux/cart/cart.selector';
 import './styles.css';
 
-const Cart = ({ cartCount, cartList, cartTotal }) => {
+
+const Cart = ({ cartCount, cartList, cartTotal, CartPay }) => {
   return (
     <>
       <div className='cart-header'>
@@ -28,6 +31,7 @@ const Cart = ({ cartCount, cartList, cartTotal }) => {
             <Menu list={cartList} />
           </div>
           <h3 className='orders-total'>Your Total ${cartTotal}</h3>
+          <button className='stripe' type='submit'>Payer maintenant</button>
         </div>
       )}
       <Footer />
@@ -38,7 +42,7 @@ const Cart = ({ cartCount, cartList, cartTotal }) => {
 const mapStateToProps = createStructuredSelector({
   cartCount: selectCartItemsCount,
   cartList: selectCartItems,
-  cartTotal: selectCartTotal,
+  cartTotal: selectCartTotal
 });
 
 export default connect(mapStateToProps)(Cart);

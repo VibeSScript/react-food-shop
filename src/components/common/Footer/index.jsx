@@ -5,10 +5,8 @@ import './styles.css';
 const Footer = () => {
   return (
     <footer>
-      <p>
-        We're a team of Professional cooks who are excited about their food,
-        amazing skills and expertiness in cooking.
-      </p>
+    <a class="call" href="tel: 0788369195">0788369195</a>
+    <a class="mail" href="mailto:lukian@wime.fr"> lukian@wime.fr</a>
       <Logo />
     </footer>
   );
