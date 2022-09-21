@@ -1,7 +1,7 @@
 export const menuItemsData = [
   {
     id: 1,
-    name: 'Mediterranean  Salad',
+    name: 'Pan-fried camembert',
     info: 'spicey with garlic and then deep fried to crispy perfection',
     price: 24,
     img: '/images/fromage2.png',

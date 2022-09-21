@@ -31,7 +31,7 @@ const Cart = ({ cartCount, cartList, cartTotal, CartPay }) => {
             <Menu list={cartList} />
           </div>
           <h3 className='orders-total'>Your Total ${cartTotal}</h3>
-          <button className='stripe' type='submit'>Payer maintenant</button>
+          <button className='stripe' type='submit'>Checkout</button>
         </div>
       )}
       <Footer />
